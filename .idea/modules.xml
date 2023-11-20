@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Skunkworks-code-exercises-mentor.iml" filepath="$PROJECT_DIR$/.idea/Skunkworks-code-exercises-mentor.iml" />
       <module fileurl="file://$PROJECT_DIR$/linkedList/linkedList.iml" filepath="$PROJECT_DIR$/linkedList/linkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/robotInventory/robotInventory.iml" filepath="$PROJECT_DIR$/robotInventory/robotInventory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sudoku/sudoku.iml" filepath="$PROJECT_DIR$/sudoku/sudoku.iml" />
     </modules>
   </component>
 </project>

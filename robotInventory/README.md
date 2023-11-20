@@ -19,13 +19,13 @@ Your task is to create a program that functions as an inventory for parts of a r
 To do this, you'll need to know or learn about:
 
  * user input/output (`cin/cout` for C++; `Scanner/System.out.println()` for Java)
- * variables
+ * [variables](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/Variable)
  * strings (`std::string` for C++; `String` for Java)
- * arrays
- * for/while loops
- * if statements. 
+ * [arrays](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/Array)
+ * [for](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/For-loop) / [while](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/While-loop) loops
+ * [if statements](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/If-else-statement). 
 
-If you need help, ask a mentor or the internet. For reading on the above topics, try [cplusplus.com](http://www.cplusplus.com) or [the Java tutorials](https://docs.oracle.com/javase/tutorial/).
+If you need help, ask a mentor or the internet. For reading on the above topics, try [the wiki](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki), [cplusplus.com](http://www.cplusplus.com) or [the Java tutorials](https://docs.oracle.com/javase/tutorial/).
 
 # Tips
 The structure of the program should roughly be as follows:

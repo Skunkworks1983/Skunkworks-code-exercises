@@ -8,11 +8,11 @@ To compile and run your C++ code, either import this directory into Eclipse as a
 # Background
 This exercise is focused on the following topics:
 
- * classes
+ * [classes](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/Class)
  * references/pointers (note: these are two different things in C++, while Java doesn't have pointers at all)
- * data structure traversal
+ * [data structure](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki/Data-structure) traversal
 
-If you need help, ask a mentor. Be careful about searching the internet for help on this, because you may stumble upon someone else's fully-implemented linked list and end up not learning anything.
+If you need help, ask a mentor or search [the wiki](https://github.com/Skunkworks1983/Skunkworks-code-exercises/wiki). Be careful about searching the internet more broadly for help on this, because you may stumble upon someone else's fully-implemented linked list and end up not learning anything.
 
 # Tips
  * You'll need a way to represent the nodes of your linked list in your code, as well as the overall list itself. A separate class for the nodes may be a good design decision.

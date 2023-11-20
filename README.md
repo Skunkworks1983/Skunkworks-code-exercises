@@ -6,6 +6,11 @@ Coding practice with arrays, loops, conditionals, and strings. Students will wor
 
 Difficulty: ⭐ 
 
+# sudoku
+More coding practice with arrays and loops, and an introduction to classes. Students will learn about iterating over more complex data structures and about the difference between class scope and local scope as they implement the classic logic puzzle.
+
+Difficulty: ⭐⭐
+
 # linkedList
 Coding and design practice with classes and pointers. Students will learn about dealing with references and designing object-oriented code as they solve a canonical programming problem. This exercise also serves as an introduction to dynamic data structures.
 

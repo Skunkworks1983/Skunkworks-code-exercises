@@ -39,11 +39,13 @@ public class Grid {
     public boolean robotMoveSouth() {
         int newX = robotLocation.x;
         int newY = robotLocation.y + 1;
-        if (!robotCanMoveTo(newX, newY)) {
-            return false;
+        boolean canMove = robotCanMoveTo(newX, newY);
+        if (canMove) {
+            robotLocation = new Location(newX, newY);
         }
-        robotLocation = new Location(newX, newY);
-        return true;
+        print();
+        sleep();
+        return canMove;
     }
 
     // Moves the robot up in the grid. Returns true if this was a valid move and
@@ -51,11 +53,13 @@ public class Grid {
     public boolean robotMoveNorth() {
         int newX = robotLocation.x;
         int newY = robotLocation.y - 1;
-        if (!robotCanMoveTo(newX, newY)) {
-            return false;
+        boolean canMove = robotCanMoveTo(newX, newY);
+        if (canMove) {
+            robotLocation = new Location(newX, newY);
         }
-        robotLocation = new Location(newX, newY);
-        return true;
+        print();
+        sleep();
+        return canMove;
     }
 
     // Moves the robot right in the grid. Returns true if this was a valid move and
@@ -63,11 +67,13 @@ public class Grid {
     public boolean robotMoveEast() {
         int newX = robotLocation.x + 1;
         int newY = robotLocation.y;
-        if (!robotCanMoveTo(newX, newY)) {
-            return false;
+        boolean canMove = robotCanMoveTo(newX, newY);
+        if (canMove) {
+            robotLocation = new Location(newX, newY);
         }
-        robotLocation = new Location(newX, newY);
-        return true;
+        print();
+        sleep();
+        return canMove;
     }
 
     // Moves the robot left in the grid. Returns true if this was a valid move and
@@ -75,15 +81,18 @@ public class Grid {
     public boolean robotMoveWest() {
         int newX = robotLocation.x - 1;
         int newY = robotLocation.y;
-        if (!robotCanMoveTo(newX, newY)) {
-            return false;
+        boolean canMove = robotCanMoveTo(newX, newY);
+        if (canMove) {
+            robotLocation = new Location(newX, newY);
         }
-        robotLocation = new Location(newX, newY);
-        return true;
+        print();
+        sleep();
+        return canMove;
     }
 
     // Returns true if this x,y position is a valid place for the robot to move.
-    // A position is valid if it is not in a wall and is within the sides of the grid.
+    // A position is valid if it is not in a wall and is within the sides of the
+    // grid.
     public boolean robotCanMoveTo(int x, int y) {
         if (isWall(x, y) || x < 0 || x >= xSize || y < 0 || y >= ySize) {
             return false;
@@ -138,6 +147,13 @@ public class Grid {
                     wallLocations.add(new Location(x, y));
                 }
             }
+        }
+    }
+
+    public void sleep() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
         }
     }
 }

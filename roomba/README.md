@@ -24,7 +24,8 @@ position (1, 0). The origin, (0, 0), is the top left (or northwest) corner of th
 ## Running the Program
 
 You should be able to run the program from the `java/` directory using `java Main.java`. You should
-see the robot moving around in a small square, cleaning the floor as it goes.
+see the robot moving around in a small square, cleaning the floor as it goes. You mean need to
+run `cd java` to get into the right directory first.
 
 The program will keep running until the whole floor is clean, which won't happen with the existing code.
 You can stop the program by pressing control-C on your keyboard while in the terminal window (this is true
@@ -32,10 +33,9 @@ of most programs).
 
 ## Implementing Your Solution
 
-Your solution code should go in the `moveRobotOnce()` method in `Main.java`. Each time this method is
-called, you should call a robot movement method on `grid` and possibly also `grid.robotClean()`. Calling
-more than one movement function at a time will mess up the regular printing of the grid, which happens
-every 1 second by default.
+Your solution code should go in the `moveRobot()` method in `Main.java`. The main method will keep calling
+this method repeatedly until the whole floor is clean. You can choose whether to only move once every time
+`moveRobot()` gets called or do all your movements in a single run of `moveRobot()`--the code should work fine either way.
 
 ## Background
 

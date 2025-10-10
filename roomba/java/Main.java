@@ -2,19 +2,15 @@ public class Main {
     public static void main(String[] args) {
         Grid grid = new Grid(10, 10);
         grid.print();
+        grid.sleep();
         while (!grid.allClean()) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-            }
-            moveRobotOnce(grid);
-            grid.print();
+            moveRobot(grid);
         }
     }
 
     static int step = 0;
 
-    public static void moveRobotOnce(Grid grid) {
+    public static void moveRobot(Grid grid) {
         int stepType = step % 4;
         switch (stepType) {
             case 0:

@@ -9,7 +9,6 @@ public class Main {
         System.exit(grid.allClean() ? 0 : 1);
     }
 
-    //what dis do
     public static void cleanFloor(Grid grid) {
         while (true) {
             grid.robotClean();

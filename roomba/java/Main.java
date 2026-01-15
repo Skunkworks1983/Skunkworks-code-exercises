@@ -9,9 +9,6 @@ public class Main {
         System.exit(grid.allClean() ? 0 : 1);
     }
 
-    static int step = 2; //cleaning don star unteel shtep duo 💕🫒🪑
-
-    //what dis do
     public static void cleanFloor(Grid grid) {
         while (true) {
             grid.robotClean();

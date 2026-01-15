@@ -42,6 +42,8 @@ public class Grid {
         boolean canMove = robotCanMoveTo(newX, newY);
         if (canMove) {
             robotLocation = new Location(newX, newY);
+        } else {
+            return false;
         }
         print();
         sleep();
@@ -56,6 +58,8 @@ public class Grid {
         boolean canMove = robotCanMoveTo(newX, newY);
         if (canMove) {
             robotLocation = new Location(newX, newY);
+        } else {
+            return false;
         }
         print();
         sleep();
@@ -70,6 +74,8 @@ public class Grid {
         boolean canMove = robotCanMoveTo(newX, newY);
         if (canMove) {
             robotLocation = new Location(newX, newY);
+        } else {
+            return false;
         }
         print();
         sleep();
@@ -84,6 +90,8 @@ public class Grid {
         boolean canMove = robotCanMoveTo(newX, newY);
         if (canMove) {
             robotLocation = new Location(newX, newY);
+        } else {
+            return false;
         }
         print();
         sleep();
@@ -128,7 +136,7 @@ public class Grid {
                 } else if (new Location(x, y).equals(robotLocation)) {
                     System.out.print('r');
                 } else if (isClean(x, y)) {
-                    System.out.print('c');
+                    System.out.print(',');
                 } else {
                     System.out.print('.');
                 }
@@ -152,7 +160,7 @@ public class Grid {
 
     public void sleep() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(400);
         } catch (InterruptedException e) {
         }
     }

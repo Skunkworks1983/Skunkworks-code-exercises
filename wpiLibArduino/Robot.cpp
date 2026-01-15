@@ -2,7 +2,6 @@
 #include "Scheduler.h"
 #include "adafruit/Adafruit_MotorShield.h"
 #include <Wire.h>
-#include "ExampleCommand.h"
 #include "CommandGroup.h"
 
 #include <string>
@@ -33,9 +32,6 @@ Adafruit_MotorShield* Robot::getShield()
 void Robot::autonomousInit()
 {
 	// TODO your code here
-	CommandGroup* commandGroup = new CommandGroup();
-	commandGroup->addParallel(new ExampleCommand(4,3));
-	Scheduler::getInstance()->addCommand(commandGroup);
 }
 
 void Robot::autonomousPeriodic()

@@ -38,4 +38,7 @@ If you need help with any of these, ask a mentor or the internet.
 
 # Extensions
 
-N/A
+1. Make your Arduino bot drive in a circle of a fixed diameter.
+2. Make your Arduino bot drive in a square using a CommandGroup.
+3. Make your Arduino bot set the speed of its motors proportionally to the voltage received from the infrared distance sensor.
+4. Use a PID with the infrared distance sensor to make your Arduino bot maintain a fixed distance from whatever is in front of it.

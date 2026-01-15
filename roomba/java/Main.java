@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Grid grid = new Grid(100, 100); //Not big enough...
+        Grid grid = new Grid(20, 20);
         grid.print();
         grid.sleep();
 
@@ -9,9 +9,6 @@ public class Main {
         System.exit(grid.allClean() ? 0 : 1);
     }
 
-    static int step = 2; //cleaning don star unteel shtep duo 💕🫒🪑
-
-    //what dis do
     public static void cleanFloor(Grid grid) {
         while (true) {
             grid.robotClean();

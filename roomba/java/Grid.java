@@ -160,7 +160,7 @@ public class Grid {
 
     public void sleep() {
         try {
-            Thread.sleep(400);
+            Thread.sleep(395);
         } catch (InterruptedException e) {
         }
     }
